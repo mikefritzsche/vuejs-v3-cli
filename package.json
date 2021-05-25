@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "kebab-case": "^1.0.1",
+    "uppercamelcase": "^3.0.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
@@ -24,8 +26,13 @@
     "@vue/compiler-sfc": "^3.0.0",
     "@vue/test-utils": "^2.0.0-0",
     "babel-eslint": "^10.1.0",
+    "chalk": "^4.1.1",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0",
+    "file-save": "^0.2.0",
+    "fs-extra": "^10.0.0",
+    "inquirer": "^8.0.0",
+    "path": "^0.12.7",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "typescript": "~3.9.3",

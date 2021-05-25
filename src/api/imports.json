@@ -1,0 +1,6 @@
+{
+  "analytics": "@/api/modules/analytics",
+  "test": "@/api/modules/test",
+  "champaign": "@/api/modules/champaign",
+  "push": "@/api/modules/push"
+}
