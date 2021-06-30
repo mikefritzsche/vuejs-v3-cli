@@ -31,25 +31,34 @@ export default {
     TestOne
   },
   computed: {
-    ...mapState(['api'])
+    ...mapState(['api', 'newApi', 'testImportApi'])
   },
   watch: {
     api: {
       async handler(api) {
         if (Object.keys(api).length) {
-          await this.api.analytics.search().then(resp => {
-            console.log('api.analytics.search: ', resp)
-          })
-          await this.api.champaign.campaigns().then(resp => {
-            console.log(resp)
-          })
+          // await this.api.analytics.search().then(resp => {
+          //   console.log('api.analytics.search: ', resp)
+          // })
+          // await this.api.champaign.campaigns().then(resp => {
+          //   console.log(resp)
+          // })
         }
       },
       immediate: true
     }
   },
   created() {
-    console.log('created api: ', this.api)
+    this.api.account.user.users().then(resp => {
+      console.log('user resp: ', resp)
+    })
+    // this.newApi.champaign.tracker.trackers().then(resp => {
+    //   console.log('resp: ', resp)
+    // })
+    // .catch(err => {
+    //   console.log('err: ', err)
+    // })
+    console.log('created api: ', this.api, this.newApi)
   }
 }
 </script>

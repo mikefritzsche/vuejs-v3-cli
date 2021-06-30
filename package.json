@@ -6,9 +6,15 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "dash": "npx babel-node --presets @babel/preset-env bin/dash.js"
   },
   "dependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/node": "^7.14.7",
+    "@babel/preset-env": "^7.14.7",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "kebab-case": "^1.0.1",
     "uppercamelcase": "^3.0.0",
@@ -32,6 +38,7 @@
     "file-save": "^0.2.0",
     "fs-extra": "^10.0.0",
     "inquirer": "^8.0.0",
+    "nodemon": "^2.0.8",
     "path": "^0.12.7",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",

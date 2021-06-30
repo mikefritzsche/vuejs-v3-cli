@@ -1,0 +1,5 @@
+{
+  "account": "http://localhost:3000/account",
+  "champaign": "http://localhost:3000/champaign",
+  "analytics": "http://localhost:3000/analytics"
+}
